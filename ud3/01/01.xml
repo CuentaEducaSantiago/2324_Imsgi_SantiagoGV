@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Santiago GV, Noticias El pais</title>
+        <link>https://elpais.com/</link>
+        <description>Noticias de ultima hora en españa</description>
+        <item>
+            <title>Las Fuerzas Armadas han perdido el 10% de sus efectivos en las últimas dos décadas</title>
+            <link>https://elpais.com/espana/2024-01-09/las-fuerzas-armadas-han-perdido-el-10-de-sus-efectivos-en-las-ultimas-dos-decadas.html</link>
+            <guid>https://elpais.com/espana/2024-01-09/las-fuerzas-armadas-han-perdido-el-10-de-sus-efectivos-en-las-ultimas-dos-decadas.html</guid>
+            <description>Las Fuerzas Armadas españolas han perdido el 10% de sus efectivos en poco más de dos décadas, pasando de 130.039 militares en 2010 a solo 116.961 en 2023</description>
+        </item>
+        <item>
+            <title>El denunciante del caso Villarejo delata al comisario responsable de fronteras de Barajas</title>
+            <link>https://elpais.com/espana/2024-01-08/el-denunciante-del-caso-villarejo-delata-al-comisario-responsable-de-fronteras-de-bajaras.html</link>
+            <guid>https://elpais.com/espana/2024-01-08/el-denunciante-del-caso-villarejo-delata-al-comisario-responsable-de-fronteras-de-bajaras.html</guid>
+            <description>Francisco Menéndez detalla entregas de efectivo y regalos de lujo al policía para que dejara entrar sin control a directivos de una compañía estatal guineana</description>
+        </item>
+        <item>
+            <title>Bruselas recuerda al Gobierno y al PP que renovar el Poder Judicial es responsabilidad de España</title>
+            <link>https://elpais.com/espana/2024-01-08/bruselas-recuerda-a-gobierno-y-pp-que-es-responsabilidad-de-espana-renovar-el-poder-judicial.html</link>
+            <guid>https://elpais.com/espana/2024-01-08/bruselas-recuerda-a-gobierno-y-pp-que-es-responsabilidad-de-espana-renovar-el-poder-judicial.html</guid>
+            <description>La Comisión Europea pide más tiempo para decidir sobre la petición española de proponer un mediador para resolver la disputa sobre el CGPJ, algo que, subraya, no recae en sus tareas habituales</description>
+        </item>
+    </channel>
+</rss>
