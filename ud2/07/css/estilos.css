@@ -1,0 +1,150 @@
+footer div{ 
+    background-color: aqua;
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Vina+Sans&display=swap');
+*{margin:0px; padding:0px;}
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    min-height: 70vh;
+} 
+table{
+    border-collapse: collapse;
+    align-items: center;
+    justify-content: center;
+    border-color: black; 
+    border-style: solid;
+    border-width: 3px;
+    margin: auto;
+    text-align: left;
+    padding: 8px;
+    background-color: blue;
+    size: 6em;
+}
+header{
+    min-height: 20vh;
+}
+header table tr th h1{ 
+    text-align: center; 
+    font-size: 2em;
+    color: white;
+    letter-spacing: 1px;   
+    border-radius: auto;
+    background-color: darkblue;
+}
+header h1{
+    text-align: center;
+}
+.titulo1{
+    font-weight: bold;
+    font-size: 230%;
+    color: white;
+}
+.titulo1{
+    font-weight: bold;
+    font-size: 230%;
+    color: white;
+}
+.titulo1{
+    font-weight: bold;
+    font-size: 230%;
+    color: white;
+}
+.ref1::before {
+    font-weight: bold;
+    color: red;
+    content: "Hoy: ";
+}
+.ref2::before {
+    font-weight: bold;
+    color: red;
+    content: "Esta semana: ";
+}
+.ref3::before {
+    font-weight: bold;
+    color: red;
+    content: "Este mes: ";
+}
+.primera{
+    letter-spacing: 1px;  
+    background-color: green; 
+    border-radius: auto;
+}
+.segunda{
+    letter-spacing: 1px;  
+    background-color: green; 
+    border-radius: auto;
+}
+.green{
+    background-color: #31ce5d; 
+}
+.lightgreen{
+    background-color: lightgreen; 
+}
+.white{
+    background-color: white; 
+}
+.blue{
+    background-color: #19adf2; 
+}
+.purple{
+    background-color: #b516e6; 
+}
+.right{
+    transform: rotate(-5deg);
+}
+.left{
+    transform: rotate(5deg);
+}
+footer{
+    height: 10vh;
+    text-align: center;
+    min-height: 10vh;
+}
+main div{ 
+    flex-grow: 1;
+    width: 641px;
+    height: 200px;
+    padding:20px; 
+    text-align: center;
+    flex-direction: row;
+} 
+main div:nth-child(1){ 
+    position: absolute;
+    left:50%; 
+    border-color: black; 
+    border-style: solid;
+    border-width: 2px;
+    background-color:#d034a4;
+}
+main div:nth-child(1) table{
+    width: 30%;
+}
+main div:nth-child(2){ 
+    position: absolute;
+    right:50%; 
+    border-color: black; 
+    border-style: solid;
+    border-width: 2px;
+    background-color: gold;
+}
+main div:nth-child(2) table{
+    width: 50%;
+}
+main div:nth-child(3){  
+    position: absolute;
+    right:50%; 
+    bottom:0%;
+}
+main div:nth-child(4){ 
+    position: absolute;
+    left:50%; 
+    bottom:0%;
+} 
+main div:nth-child(4) li{ 
+    position: center;
+} 

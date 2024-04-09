@@ -1,0 +1,68 @@
+:root{
+    --color1:#6369d1;/*Color de la primera letra*/
+    --color2:#60E1E0;
+    --color3:#D8D2E1;/*Color del texto*/
+    --color4:#B88E8D;/*Pie de página*/
+    --color5:#34435E;/*Encabezado*/
+}
+*{margin:0; padding:0;}
+/*Todos los estilos tienen que tener un margen y un padding de 0*/
+header{
+    background-color:var(--color5);
+    padding-top:50px;
+    padding-bottom:25px;
+    color: var(--color3);
+    font-size: 2em;
+    text-align: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+h1::first-letter{
+    font-size: 2.5em;
+    color: var(--color1);
+}
+footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: var(--color4);
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    /*clear:both;*/
+}
+footer div{
+    font-weight: bold;
+    flex-grow: 1;
+}
+footer address{
+    flex-grow: 2;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+main div{
+    width: 200px;
+    height: 400px;
+    margin: 5px;
+    /*float: center;*/
+    flex-grow: 1;
+}
+main div:nth-child(1){
+    background-color: var(--color1);
+}
+main div:nth-child(2){
+    background-color: var(--color2);
+}
+main div:nth-child(3){
+    background-color: var(--color3);
+}
+main div:nth-child(4){
+    background-color: var(--color4);
+}
+main div:nth-child(5){
+    background-color: var(--color5);
+}

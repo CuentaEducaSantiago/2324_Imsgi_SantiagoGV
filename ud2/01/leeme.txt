@@ -1,0 +1,6 @@
+He quitado el menú de nav fuera del main.
+He corregido el header del articulo. 
+He rellenado el h4.
+He quitado todos los h5.
+He puesto div en cada articulo y dentro de el div he puesto el blockquote y la figure de cada articulo.
+He mejorado el pie de página.

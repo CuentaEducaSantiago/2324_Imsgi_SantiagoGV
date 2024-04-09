@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--
+Autor: Santiago González Vicente
+Descripción:Primer documento HTML 
+Fecha de creación: 29/10/2023
+-->
+<html lang="es">
+<!--
+Encabezado↓
+-->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="valor metadato">
+		<meta name="author" content="Santiago González Vicente">
+		<meta name="Keywords" content="Local, Nacional, Internacional">
+		<meta name="Generator" content="Visual Studio Code">
+		<link rel="shortcut icon" type="image/jpg" href="../../webroot/media/images/favicon/favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			table {
+				border-collapse: collapse;
+			}
+			th, td {
+				border: 1px solid black;
+			}
+		</style>
+		<title>Plantilla de formulario de la Luna</title>
+	</head>
+<!--
+Cuerpo↓
+-->
+	<body>
+		<header>
+			<h1>Trabajando con formularios</h1> 
+		</header> 
+		<main>
+			<p>Audio settings:</p> 
+			<div>
+				<input type="range" id="volumen" name="volumen" min="0" max="11">
+				<label for="volumen">Volumen</label>
+			</div>  
+			<form action="action.php">
+				<fieldset> 
+					<legend>Información personal</legend>
+					<div>
+						<label for="LblNombre">Nombre: </label> 
+						<input name="nombre" type="text" placeholder="Escribe tu nombre" id="LblNombre">
+					</div>
+					<div>
+						<label for="LblApellido">Apellido: </label>
+						<input name="nombre" type="text" placeholder="Escribe tu apellido" id="LblApellido">
+					</div>
+					<div> 
+						<label>Fecha de nacimiento: </label>
+						<input type="date" name="Birthday" value="2000-01-01" min="1970-01-01" max="2006-01-01">  
+					</div>
+					<h4>Si quiere recibir notificaciones introduzca: </h4>
+					<div> 
+						<label for="email">gmail</label>
+						<input type="email" placeholder="ejemplo@gmail.com" name="email" id="email"> 
+					</div> 
+					<div>
+						<label for="phone">Introduzca su teléfono: </label>
+						<input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+					</div>
+				</fieldset>
+				<input type="submit" value="Enviar">
+			</form>
+			<form>
+				<fieldset>
+					<legend>Tipo de Luna Favorita</legend> 
+					<div>
+						<input type="radio" id="Nueva" name="Luna" value="Nueva" checked>
+						<label for="Nueva">Nueva</label><br>
+						<input type="radio" id="Luna_creciente" name="Luna" value="Luna_creciente">
+						<label for="Luna_creciente">Luna creciente</label><br>
+						<input type="radio" id="Cuarto_creciente" name="Luna" value="Cuarto_creciente">
+						<label for="Cuarto_creciente">Cuarto creciente</label><br>
+						<input type="radio" id="Giobosa_creciente" name="Luna" value="Giobosa_creciente">
+						<label for="Giobosa_creciente">Giobosa creciente</label><br>
+						<input type="radio" id="Llena" name="Luna" value="Llena">
+						<label for="Llena">Llena</label><br>
+						<input type="radio" id="Giobosa_Menguante" name="Luna" value="Giobosa_Menguante">
+						<label for="Giobosa_Menguante">Giobosa Menguante</label><br>
+						<input type="radio" id="Cuarto_Menguante" name="Luna" value="Cuarto_Menguante">
+						<label for="Cuarto_Menguante">Cuarto Menguante</label><br>
+						<input type="radio" id="Lúnula_Menguante" name="Luna" value="Lúnula_Menguante">
+						<label for="Lúnula_Menguante">Lúnula Menguante</label><br>
+					</div>
+					<input type="submit" value="Enviar">
+				</fieldset>
+			</form>
+			<form>
+				<fieldset>
+					<legend>Razon por la que ha querido hacer este formulario</legend>
+					<label for="idC"><input type="checkbox" name="Interes" value="Interes" id="idC">Interes</label>
+					<p><label for="idD"><input type="checkbox" name="Curiosidad" value="Curiosidad" id="idD">Curiosidad</label></p>
+					<p><label for="idL"><input type="checkbox" name="Trabajo" value="Trabajo" id="idL">Trabajo</label></p> 
+					<p><label for="idO"><input type="checkbox" name="Otros" value="Otros" id="idO">Otros</label></p>
+					<input type="submit" value="Enviar">
+				</fieldset>
+			</form>
+			<form>
+				<fieldset>
+					<legend>Si quiere saber mas sobre la Luna: </legend>
+					<div>
+						<label for="search">Busque aquí: </label>
+						<input type="search" id="search" name="search"><br><br>
+					</div>
+					<div>
+						<label for="Web">Si quiere saber más de la Luna ponga su url aquí:</label><br>
+						<input type="url" id="Web" name="Web" value="https://humanidades.com/luna/"><br><br> 
+					</div>
+					<input type="submit" value="Enviar">
+				</fieldset>
+			</form>
+			<form>
+				<fieldset>
+					<legend>Si quiere crear una cuenta por favor introduzca</legend>
+					<div>
+						<label for="Usuario">Usuario: </label> 
+						<input name="Usuario" type="text" placeholder="Escribe tu nombre de Usuario" id="Usuario">
+					</div>
+					<div>
+						<label for="Contraseña">Contraseña: </label> 
+						<input name="Contraseña" type="password" placeholder="Escribe tu Contraseña" id="Contraseña">
+					</div>
+					<div>
+						<label for="Edad">Edad: </label> 
+						<input name="Edad" type="number" placeholder="Escribe tu Edad" min="18" id="Edad">
+					</div>
+					<div>
+						<label for="favcolor">Seleciona el color del marco de tu perfil: </label>
+						<input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+					</div>
+					<div>
+						<label for="Imagen_de_Perfil">Introduzca una imagen para su perfil: </label>
+						<input type="file" id="Imagen_de_Perfil" name="Imagen_de_Perfil"><br><br>
+					</div>
+					<input type="reset" value="Reset">
+					<input type="image" id="image" alt="submit" width="100" src="images/login-button.png">
+				</fieldset>
+			</form>
+			<form>
+				<fieldset>
+					<legend>Si quiere cuna entrevista de trabajo para trabajar en esta página web porfavor introduzca: </legend>
+					<div>
+						<label for="Curriculum">Introduzca su Curriculum: </label>
+						<input type="file" id="Curriculum" name="Curriculum"><br>
+					</div>
+					<div>
+						<h4>Por favor indique si tiene algun mes, semana y hora libre en específico libre en la que pueda no tener ningun problema en caso de que la llamemos o le enviemos un correo para una entrevista: </h4>
+						<label for="Mes">Mes: </label><br>
+						<input type="month" id="Mes" name="Mes" ><br>
+						<label for="week">Semana: </label><br>
+						<input type="week" id="week" name="Semana"><br>
+						<label for="Hora">Hora: </label><br>
+						<input type="time" id="Hora" name="Hora"><br>
+					</div>
+					<input type="submit" value="Enviar">
+				</fieldset>
+			</form>  
+			<textarea id="Sujerencias" name="Sujerencias">deje aqui las sujerencias para la página </textarea> 
+			<input type="hidden" id="custId" name="custId" value="5687">
+		</main>
+		<footer>  
+			<details>
+				<summary><time datetime="2023-11-02"> Fecha de la practica 24 de octubre de 2023</time>. Todos los derechos reservados. Santiago González Vicente. Fecha de actualización 14/11/2023</summary>
+				<h5>Alumno de DAW1. Asignatura LGSMI</h5>
+			</details> 
+		</footer>
+	</body>
+</html>
+<!--
+<textarea>	Indica la forma en la cual el texto debe ser envuelto
+<password> proporcionan una forma para que el usuario ingrese una contraseña de forma segura. 
+<number> son usados para permitir al usuario ingresar un número. 
+!-->

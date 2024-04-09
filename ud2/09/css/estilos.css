@@ -1,0 +1,27 @@
+*{margin:0px; padding:0px;}
+
+body{
+    position:-webkit-sticky;
+    position: sticky;
+    font-family: arial, sans-serif;
+    margin: 0  auto;
+}
+body form{
+    display: flex;
+    flex-direction:column;
+    max-width: 400px;
+    box-shadow: 0,0,10px, rgba(0, 0, 0, 0,1);
+    border-radius: 8px;
+}
+.text:hover{
+    background-color: #fff;
+}
+input[type="radio"] {
+    accent-color: green;
+}
+input[type="checkbox"] {
+    accent-color: green;
+}
+.verde{
+    background-color: green;
+}

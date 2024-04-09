@@ -1,0 +1,53 @@
+﻿*{margin:5px; padding:3px;}
+body{
+    font-family: arial, sans-serif, calibri;
+    width: 1024px;
+    margin: 0 auto;
+    min-height: 20vh;
+    background-image: url(../images/Le_petit_prince.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.col1{
+    color:#FF4500;
+    background-color:orange;
+    font-weight: bold;
+}
+.col2{
+    color:green; 
+    background-color:lightblue;
+    font-weight: bold;
+}
+div.tab1{
+    border-collapse: collapse;
+    border: 3px solid #E9967A;
+    padding: 3px;
+    position: static;
+}
+div.tab2{
+    border-collapse: collapse;
+    border: 3px #8B008B dashed;
+    align-items: left;
+    padding: 9px;
+    position: relative;
+}
+div.tab3{
+    border-collapse: collapse;
+    border: 3px #8B008B dashed;
+    align-items: bottom left;
+    bottom: 0;
+    right: 0;
+    padding: 27px;
+    position: fixed;
+}
+div.tab4{
+    border-collapse: collapse;
+    border: 3px #8B008B dashed;
+    align-items: left;
+    position: sticky;
+}
+div.tab5{
+    border-collapse: collapse;
+    border: 3px #8B008B dashed;
+    align-items: left; 
+}

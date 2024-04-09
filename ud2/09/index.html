@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="valor metadato">
+        <meta name="author" content="Santiago González Vicente">
+        <meta name="Keywords" content="Local, Nacional, Internacional">
+        <meta name="Generator" content="Visual Studio Code">
+        <link rel="shortcut icon" type="image/jpg" href="../../webroot/media/images/favicon/favicon.ico"> 
+        <link href="css/estilo.css"  rel="stylesheet"       type="text/css" >
+        <title>Ud2-09 Santiago González Vicente</title>
+    </head>
+    <body>
+        <form action="/procesar" method="post">
+            <!-- Marca del coche -->
+            <label for="marca">Marca *:</label>
+            <input type="text" id="marca" name="marca" required>
+            <!-- Modelo del coche -->
+            <label for="modelo">Modelo *:</label>
+            <input type="text" id="modelo" name="modelo" required>
+            <!-- Año de fabricación -->
+            <label for="anoFabricacion">Año de fabricación *:</label>
+            <input type="number" id="anoFabricacion" name="anoFabricacion" min="1900" max="2023" required>
+            <!-- Tipo de combustible -->
+            <label for="combustible">Tipo de combustible *:</label>
+            <select id="combustible" name="combustible" required>
+                <option value="gasolina">Gasolina</option>
+                <option value="diesel">Diesel</option>
+                <option value="híbrido">Híbrido</option>
+                <option value="eléctrico">Eléctrico</option>
+            </select>
+            <!-- Color del coche -->
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color" >
+            <!-- Kilometraje -->
+            <label for="kilometraje">Kilometraje:</label>
+            <input type="number" id="kilometraje" name="kilometraje" min="0" >
+            <!-- Transmisión -->
+            <label>Transmisión:</label>
+            <div>
+                <input type="radio" id="automatica" name="transmision" value="automatica" class="verde">
+                <label for="automatica">Automática</label>
+            </div>
+            <div>
+                <input type="radio" id="manual" name="transmision" value="manual" class="verde">
+                <label for="manual">Manual</label>
+            </div>
+            <!-- Extras -->
+            <label>Extras:</label>
+            <div>
+                <input type="checkbox" id="extras" name="extras" class="verde">
+                <label for="extras">Tiene extras</label>
+            </div>
+            <!-- Campo de área de texto para comentarios -->
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+            <!-- Botón de envío -->
+            <button type="submit" class="verde">Enviar</button>
+            <!-- Botón de reset -->
+            <button type="reset" class="verde">Restablecer</button>
+        </form>
+    </body>
+</html>
