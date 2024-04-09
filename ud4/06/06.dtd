@@ -1,0 +1,9 @@
+<!ELEMENT Lenguaje (#PCDATA)>
+    <!ELEMENT HTML (#PCDATA)>
+    <!ELEMENT Java (#PCDATA)>
+    <!ELEMENT PHP (#PCDATA)>
+    <!ELEMENT CDATA (#PCDATA)>
+    <!ELEMENT CODIGOS (Lenguaje,HTML, JAVA, PHP, CDATA)>
+    <!ELEMENT Ejemplos (CODIGOS)>
+    <!ATTLIST Ejemplos xmlns:xsi CDATA #IMPLIED > <!-- para que este doblemente validado -->
+    <!ATTLIST Ejemplos xsi:noNamespaceSchemaLocation CDATA #IMPLIED >

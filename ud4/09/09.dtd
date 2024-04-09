@@ -1,0 +1,7 @@
+<!ENTITY escritor "Miguel de Cervantes">
+<!ENTITY obra "El Quijote">
+<!ENTITY fecha "29/09/1547">
+<!ELEMENT textos (texto+ )>
+<!ELEMENT texto (#PCDATA)>
+<!ATTLIST textos xmlns:xsi CDATA #IMPLIED > <!-- para que este doblemente validado -->
+<!ATTLIST textos xsi:noNamespaceSchemaLocation CDATA #IMPLIED >

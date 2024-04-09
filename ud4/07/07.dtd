@@ -1,0 +1,7 @@
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Codigo (#PCDATA)>
+<!ELEMENT Tutor (#PCDATA)>
+<!ELEMENT Estudiante (Nombre, Codigo, Tutor)>
+<!ELEMENT Grupo (Estudiante+)>
+<!ATTLIST Grupo xmlns:xsi CDATA #IMPLIED > <!-- para que este doblemente validado -->
+<!ATTLIST Grupo xsi:noNamespaceSchemaLocation CDATA #IMPLIED >

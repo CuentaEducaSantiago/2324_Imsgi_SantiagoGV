@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--
+Autor: Santiago González Vicente
+Descripción:Ud2-01 Santiago González Vicente HTML 
+Fecha de creación: 26/09/2023
+-->
+<html lang="es">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="valor metadato">
+		<meta name="author" content="Santiago González Vicente">
+		<meta name="Keywords" content="Local, Nacional, Internacional">
+		<meta name="Generator" content="Visual Studio Code">
+		<link rel="shortcut icon" type="image/jpg" href="../../webroot/media/images/favicon/favicon.ico"> 
+        <link href="css/estilo.css"  rel="stylesheet"  type="text/css">
+		<title>Tema 5 XPath</title>
+	</head>
+    <body>
+        <h1>Tema 5 XPath</h1>
+        <h2>Ejercicio 1</h2>
+        <h3>Datos <a href="http://xpather.com/XbMPGA7i">xml</a></h3>
+        <main>
+            <div>
+                    <ol>
+                        <li>1. Título de las actividades
+                            <code>/actividades/actividad/titulo</code>
+                            <img src="images/01.png" alt="Resultado 1"/>
+                        </li>
+                    </ol>
+                </div>
+            <div>
+                    <ol>
+                        <li>2. Mostrar el código de la actividad, título y nivel.
+                            <code>/actividades/actividad/codigo/text()|/actividades/actividad/titulo/text()|/actividades/actividad/nivel/text()</code>
+                            <img src="images/02.png" alt="Resultado 2"/>
+                        </li>
+                    </ol>
+                </div>
+            <div>
+                    <ol>
+                        <li>3. El primer título de la actividad.
+                            <code>/actividades/actividad[1]/titulo[1]</code>
+                            <img src="images/03.png" alt="Resultado 3"/>
+                        </li>
+                    </ol>
+                </div>
+            <div>
+                    <ol>
+                        <li>4. El último título de la actividad. 
+                            <code>/actividades/actividad[last()]/titulo[1]</code>
+                            <img src="images/04.png" alt="Resultado 4"/>
+                        </li>
+                    </ol>
+                </div>
+            <div>
+                    <ol>
+                        <li>5. Todos los elementos descendientes de las actividades infantiles
+                            <code>//actividad[@nivel="infantil"]</code>
+                            <img src="images/05.png" alt="Resultado 5"/>
+                        </li>
+                    </ol>
+                </div>
+            <div>
+                    <ol>
+                        <li>6. El nombre de las actividades para adultos.
+                            <code>//actividad[@nivel="adultos"]</code>
+                            <img src="images/06.png" alt="Resultado 6"/>
+                        </li>
+                    </ol>
+                </div>
+            <div>
+                    <ol>
+                        <li>7. El nombre de las actividades con dos sesiones semanales
+                            <code>/actividades/actividad[sesiones/sesiones_semana=2]/titulo/text()</code>
+                            <img src="images/07.png" alt="Resultado 7"/>
+                        </li>
+                    </ol>
+                </div>
+            <div>
+                    <ol>
+                        <li>8. Número de actividades
+                            <code>/actividades/count(actividad)</code>
+                            <img src="images/08.png" alt="Resultado 8"/>
+                        </li>
+                    </ol>
+                </div>
+            <div>
+                    <ol>
+                        <li>9. Si queremos convertir el resultado a cadena de caracteres, podemos usar la función string().
+                            <code>string(count(/actividades/actividad))</code>
+                            <img src="images/09.png" alt="Resultado 9"/>
+                        </li>
+                    </ol>
+                </div>
+            <div>
+                    <ol>
+                        <li>10. Cuenta del número de actividades infantiles.
+                            <code>//actividades/actividad/count(@nivel="infantil")</code>
+                            <img src="images/10.png" alt="Resultado 10"/>
+                        </li>
+                    </ol>
+                </div>
+            <div>
+                <ol>
+                    <li>11. Suma de las sesiones semanales de las actividades para adultos.
+                        <code>sum(/actividades/actividad[@nivel="adultos"]/sesiones/sesiones_semana)</code>
+                        <img src="images/11.png" alt="Resultado 11"/>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <ol>
+                    <li>12. Nodos de la actividad de código A06.
+                        <code>/actividades/actividad[./codigo="A06"]/node()</code>
+                        <img src="images/12.png" alt="Resultado 12"/>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <ol>
+                    <li>13. Duración de las actividades con intensidad fuerte
+                        <code>/actividades/actividad/sesiones[@intensidad="fuerte"]/minutos_sesion/text()</code>
+                        <img src="images/13.png" alt="Resultado 13"/>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <ol>
+                    <li>14. Mostrar el código de las actividades cuya duración coincide con la duración del 1º actividad.
+                        <code>/actividades/actividad[sesiones/minutos_sesion/text()=//actividad[1]/sesiones/minutos_sesion/text()]/codigo</code>
+                        <img src="images/14.png" alt="Resultado 14"/>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <ol>
+                    <li>15. Título de las actividades del año 2018.
+                        <code>/actividades/actividad[fecha_inicio>="2018-01-01" and fecha_inicio<="2018-12-31"]/titulo/text()</code>
+                        <img src="images/15.png" alt="Resultado 15"/>
+                    </li>
+                </ol>
+            </div>
+        </main>
+        <footer>
+            <div>2023-24 IES LOS SAUCES</div>
+            <div>&#169;Todos los derechos reservados</div>
+            <div><address><em>Autor: Santiago González Vicente</em></address></div>
+            <div>Fecha de última actualización: 11/Marzo/2024</div>
+        </footer>
+    </body>
+</html>

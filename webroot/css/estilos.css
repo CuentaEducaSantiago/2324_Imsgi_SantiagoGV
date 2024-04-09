@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    background-image: url("/webroot/media/images/picto_infobox_cinema.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: #00686c;
+    height: 100px;
+    color: #edecb3;
+}
+header img {
+    width: 100px;
+    border-radius: 50%;
+}
+section {
+    width: 30%;
+    margin-right: 40px; 
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: #00686c;
+}
+section header{
+    color: orange;
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    flex-direction:row;
+    background-color: #00686c;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    height: 80px;
+    width: 100%;
+    left: 0px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: #00686c;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav ul li{
+    background-color: #00686c;;
+    margin-right: 40px;
+    margin-left: 40px;
+    display:list-item;    
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+nav ul li a {
+    padding: 10px;
+    text-transform: uppercase;
+    color: #00686c;
+    background-color: #edecb3;
+    margin-right: 10px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #00686c;
+    color: #edecb3;
+    right: 2%;
+}
+section a:hover {
+    color: gray;
+}
+
+section ol {
+    padding: 10px;
+    margin-top: 7px;
+    width: 100%;
+    color: #edecb3;
+}
+section:nth-child(2) section{
+    background-image: url("/webroot/media/images/7365.jpg");
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size: 400px;
+}
+section li {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color: #edecb3;
+    color: #00686c;
+    font-size: 30px;
+    padding: 10px;
+}
+section a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00686c;
+    color: #edecb3;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    background-color: #00686c;
+    background-image: url("/webroot/media/images/Picto_infobox_cinema.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 300px;
+    width: 100%;
+    height: 70px;
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+    color: #edecb3;
+}
+
+#fixed {
+    position: fixed;
+    bottom: 95%;
+    right: 2%;
+    height: 30px;
+}
+footer img {
+    width: 50px;
+}

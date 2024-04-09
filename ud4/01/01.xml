@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE alumno SYSTEM "01.dtd">-->
+<mail xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="01.xsd">
+    <remitente>random6@gmail.com</remitente>
+    <destinatario>Desti9348@gmail.com</destinatario>
+    <fecha_mensaje>12/7/2000</fecha_mensaje>
+    <asunto></asunto>
+    <mensaje>Falta de respuesta</mensaje>
+    <fichero>
+        <nombre_fichero>Mail</nombre_fichero>
+        <tipo_fichero>XML</tipo_fichero>
+    </fichero>
+</mail>

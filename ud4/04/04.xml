@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE alumno SYSTEM "04.dtd">-->
+<Curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="03.xsd">
+    <Nombre>Santiago</Nombre>
+    <Apellidos>Gonzalez Vicente</Apellidos>
+    <Anyo_de_nacimiento>2004/04/13</Anyo_de_nacimiento>
+    <Residencia>
+        <Ciudad>Zamora</Ciudad>
+        <Pais>España</Pais>
+    </Residencia>
+    <Datos_de_contacto>
+        <Telefono>629287640</Telefono>
+        <Correo_electronico>Santiago.gonvic@educa.jcyl.es</Correo_electronico>
+        <Perfil_Linkedln>Vacia</Perfil_Linkedln>
+        <Descripcion_general></Descripcion_general>
+        <Listado_de_competencias>
+            <Nombre_Listado>WORK:</Nombre_Listado> 
+            <Nivel>Medio</Nivel>
+            <Nombre_Listado>EXCEL:</Nombre_Listado> 
+            <Nivel>Medio</Nivel>
+            <Nombre_Listado>VIRTUAL BOX:</Nombre_Listado> 
+            <Nivel>Medio</Nivel>
+            <Nombre_Listado>HTML:</Nombre_Listado> 
+            <Nivel>Medio</Nivel>
+            <Nombre_Listado>INGLES:</Nombre_Listado> 
+            <Nivel>Medio</Nivel>
+            <Nombre_Listado>LIBREOFICE:</Nombre_Listado> 
+            <Nivel>Medio</Nivel>
+        </Listado_de_competencias>
+        <Formacion_academica>
+            <Titulacion>ESO</Titulacion>
+            <centro_de_formacion>LOS SAUCES</centro_de_formacion>
+            <Anyo_de_titulacion>2020</Anyo_de_titulacion>
+            <Titulacion>SMR2</Titulacion>
+            <centro_de_formacion>LOS SAUCES</centro_de_formacion>
+            <Anyo_de_titulacion>2023</Anyo_de_titulacion>
+        </Formacion_academica>
+        <Experiencia_profesional>
+            <puesto>Repartidor</puesto>
+            <empresa>Tipsa</empresa>
+            <Anyo_de_inicio>2023/06/13</Anyo_de_inicio>
+            <Anyo_de_finalizacion>2023/07/13</Anyo_de_finalizacion>
+        </Experiencia_profesional>
+    </Datos_de_contacto>
+</Curriculum>

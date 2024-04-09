@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE Hechos_historicos SYSTEM="03.dtd">-->
+<Hechos_historicos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="03.xsd">
+    <hecho>
+        <Descripcion>Se funda Youtube</Descripcion>
+        <fecha dia="15" mes="2" anyo="2005"/>
+    </hecho>
+    <hecho>
+        <Descripcion>Se funda Google</Descripcion>
+        <fecha dia="4" mes="9" anyo="1998"/>
+    </hecho>
+    <hecho>
+        <Descripcion>Se funda Facebook</Descripcion>
+        <fecha dia="4" mes="2" anyo="2004"/>
+    </hecho>
+</Hechos_historicos>

@@ -1,0 +1,46 @@
+<pagina xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="10.xsd">
+    <receta plato="Primero">
+        <nombre>Risotto milanesa</nombre>
+        <tiempo coccion="20"/>
+            <ingredientes>
+                <ingrediente>Arroz
+                <cantidad unidad="gramo">500</cantidad>
+                </ingrediente>
+                <ingrediente>
+                Cebolla mediana
+                <cantidad>1</cantidad>
+                </ingrediente>
+                <ingrediente>
+                Azafrá
+                <cantidad unidad="pizca">1</cantidad>
+                </ingrediente>
+                <ingrediente>
+                Queso parmesano
+                <cantidad unidad="gramo">100</cantidad>
+                </ingrediente>
+                <ingrediente>
+                Mantequilla
+                <cantidad unidad="gramo">100</cantidad>
+                </ingrediente>
+                <ingrediente> Sal </ingrediente>
+                <ingrediente> Pimienta </ingrediente>
+                <ingrediente>
+                Caldo
+                <cantidad unidad="mililitro">1000</cantidad>
+                </ingrediente>
+                <ingrediente>
+                Vino blanco
+                <cantidad unidad="chorro">1</cantidad>
+                </ingrediente>
+            </ingredientes>
+            <instrucciones>
+                <paso>Picamos la cebolla y la pochamos con la mitad de la mantequilla</paso>
+                <paso>Cuando esté transparente, echamos el azafrán, el vino y dejamos que reduzca</paso>
+                <paso>A continuación, incorporamos el arroz, lo sofreímos un poco</paso>
+                <paso>Vamos añadiendo el cado caliente poco a poco mientras removemos</paso>
+                <paso>Salpimientamos</paso>
+                <paso>Cuando esté casi hecho, agregamos el resto de la mantequilla y queso</paso>
+                <paso>Servimos eseguida</paso>
+            </instrucciones>
+        </receta>
+    </pagina>

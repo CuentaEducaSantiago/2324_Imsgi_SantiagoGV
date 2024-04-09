@@ -1,0 +1,71 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- Declaracion de tipos -->
+    <xs:simpleType name="tipotiempo">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="999"/>
+        </xs:restriction>
+        </xs:simpleType>
+        <!-- Principal -->
+        <xs:element name="pagina">
+        <xs:complexType>
+        <xs:sequence>
+        <xs:element name="receta" maxOccurs="unbounded">
+        <xs:complexType>
+        <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+        <xs:element name="tiempo">
+        <xs:complexType>
+        <xs:attribute name="coccion" type="tipotiempo"/>
+        <xs:attribute name="preparacion" use="optional" type="tipotiempo"/>
+        </xs:complexType>
+        </xs:element>
+        <xs:element name="ingredientes">
+        <xs:complexType>
+        <xs:sequence>
+        <xs:element name="ingrediente" maxOccurs="unbounded">
+        <xs:complexType mixed="true">
+        <xs:sequence>
+        <xs:element name="cantidad" minOccurs="0">
+        <xs:complexType>
+        <xs:simpleContent>
+        <xs:extension base="xs:positiveInteger">
+        <xs:attribute name="unidad" default="gramo" use="optional">
+        <xs:simpleType>
+        <xs:restriction base="xs:string">
+        <xs:pattern value="gramo|pizca|mililitro|cucharada|chorro"/>
+        </xs:restriction>
+        </xs:simpleType>
+        </xs:attribute>
+        </xs:extension>
+        </xs:simpleContent>
+        </xs:complexType>
+        </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+        <xs:element name="instrucciones" minOccurs="0">
+        <xs:complexType>
+        <xs:sequence>
+        <xs:element name="paso" maxOccurs="10"/>
+        </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+        </xs:sequence>
+        <xs:attribute name="plato" default="Primero">
+        <xs:simpleType>
+        <xs:restriction base="xs:string">
+        <xs:pattern value="Primero|Segundo|Postre"/>
+        </xs:restriction>
+        </xs:simpleType>
+        </xs:attribute>
+        </xs:complexType>
+        </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

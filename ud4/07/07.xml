@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE alumno SYSTEM "07.dtd">
+<Grupo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="03.xsd">
+    <Estudiante>
+        <Nombre>Leo</Nombre>
+        <Codigo>34542323</Codigo>
+        <Tutor>Rick</Tutor>
+    </Estudiante>
+    <Estudiante>
+        <Nombre>Rick</Nombre>
+        <Codigo>89347834</Codigo>
+        <Tutor>Marta</Tutor>
+    </Estudiante>
+    <Estudiante>
+        <Nombre>Lia</Nombre>
+        <Codigo>216756734</Codigo>
+        <Tutor>Marta, Rick</Tutor>
+    </Estudiante>
+</Grupo>

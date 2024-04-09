@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE alumno SYSTEM "05.dtd">-->
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="03.xsd">
+    <Employee>
+        <FirstName>Juan</FirstName>
+        <LastName>Sanchez</LastName>
+        <ContactoNO>123456789</ContactoNO>
+        <Email>juansanchez@company.com</Email>
+        <Address>
+            <City>Bangalore</City>
+            <State>Karnataka</State>
+            <Zip>560212</Zip>
+        </Address>
+    </Employee>
+</Company>

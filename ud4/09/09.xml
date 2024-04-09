@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE alumno SYSTEM "08.dtd">
+<textos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="03.xsd">
+    <texto>&obra; fue escrito por &escritor;</texto>
+    <texto>&escritor; nació el &fecha;</texto>
+</textos>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--
+Autor: Santiago González Vicente
+Descripción:Ud2-01 Santiago González Vicente HTML 
+Fecha de creación: 26/09/2023
+-->
+<html lang="es">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="valor metadato">
+		<meta name="author" content="Santiago González Vicente">
+		<meta name="Keywords" content="Local, Nacional, Internacional">
+		<meta name="Generator" content="Visual Studio Code">
+		<link rel="shortcut icon" type="image/jpg" href="../../webroot/media/images/favicon/favicon.ico"> 
+        <link href="css/estilo.css"  rel="stylesheet"  type="text/css">
+		<title>Tema 5 XPath</title>
+	</head>
+    <body>
+        <h1>Tema 5 XPath</h1>
+        <h2>Ejercicio 1</h2>
+        <h3>Datos <a href="http://xpather.com/XbMPGA7i">xml</a></h3>
+        <main>
+            <section>
+                <div>
+                    <ol>
+                        <li>1. Los elementos de cada coche.
+                            <code>/garaje/coches/coche</code>
+                            <img src="images/01.png" alt="Resultado 1"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>2. Los elementos de cada reparación.
+                            <code>/garaje/reparaciones/reparacion</code>
+                            <img src="images/02.png" alt="Resultado 2"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>3. El contenido de La matrícula de los coches.
+                            <code>/garaje/coches/coche/matricula</code>
+                            <img src="images/03.png" alt="Resultado 3"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>4. Todos los nodos (elementos y contenido) de los coches de la marca Renault. 
+                            <code>/garaje/coches/coche[marca="Renault"]</code>
+                            <img src="images/04.png" alt="Resultado 4"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>5. Todos los nodos de los coches de más de 200000 km.
+                            <code>/garaje/coches/coche[km>200000]</code>
+                            <img src="images/05.png" alt="Resultado 5"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>6. El contenido del color del coche de matrícula 1234C.
+                            <code>/garaje/coches/coche[matricula="1234C"]/color</code>
+                            <img src="images/06.png" alt="Resultado 6"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>7. El contenido de la descripción de las reparaciones realizadas al coche de matrícula: 4444B.
+                            <code>/garaje/reparaciones/reparacion[matricula="4444B"]</code>
+                            <img src="images/07.png" alt="Resultado 7"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>8. El contenido de la descripción de la reparación de código J0005.
+                            <code>/garaje/reparaciones/reparacion[@codigo="J0005"]</code>
+                            <img src="images/08.png" alt="Resultado 8"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>9. Suma de las horas invertidas reparando coches.
+                            <code>sum(/garaje/reparaciones/reparacion/horas)</code>
+                            <img src="images/09.png" alt="Resultado 9"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>10. Número de coches en el documento.
+                            <code>count(/garaje/coches/coche)</code>
+                            <img src="images/10.png" alt="Resultado 10"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>11. Selecciona todos los elementos del primer coche.
+                            <code>/garaje/coches/coche[1]</code>
+                            <img src="images/11.png" alt="Resultado 11"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>12. Selecciona todos los elementos de la última reparación.
+                            <code>/garaje/reparaciones/reparacion[last()]</code>
+                            <img src="images/12.png" alt="Resultado 12"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>13. Selecciona todos los elementos del coche de la marca Seat con color Rojo.
+                            <code>/garaje/coches/coche[marca="Seat"][color="Rojo"]</code>
+                            <img src="images/13.png" alt="Resultado 13"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>14. Propietario del coche modelo Polo 1.2 Advance.
+                            <code>/garaje/coches/coche[modelo="Polo 1.2 Advance"]/*</code>
+                            <img src="images/14.png" alt="Resultado 14"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>15. Contenido de la descripción de las reparaciones realizadas con fecha de entrada 2013/06/06.
+                            <code>/garaje/reparaciones/reparacion[fecha_entrada="2013/06/06"]</code>
+                            <img src="images/15.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>16. Seleccionar los coches rojos y grises.
+                            <code>/garaje/coches/coche[color='Rojo' or color='Gris']/node()</code>
+                            <img src="images/15.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>17. Propietario del coche modelo Polo 1.2 Advance.
+                            <code>/actividades/actividad[fecha_inicio>="2018-01-01" and fecha_inicio<="2018-12-31"]/titulo/text()</code>
+                            <img src="images/15.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>18. Propietario del coche modelo Polo 1.2 Advance.
+                            <code>/actividades/actividad[fecha_inicio>="2018-01-01" and fecha_inicio<="2018-12-31"]/titulo/text()</code>
+                            <img src="images/15.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>19. Propietario del coche modelo Polo 1.2 Advance.
+                            <code>/actividades/actividad[fecha_inicio>="2018-01-01" and fecha_inicio<="2018-12-31"]/titulo/text()</code>
+                            <img src="images/15.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>20. Propietario del coche modelo Polo 1.2 Advance.
+                            <code>/actividades/actividad[fecha_inicio>="2018-01-01" and fecha_inicio<="2018-12-31"]/titulo/text()</code>
+                            <img src="images/15.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>21. Propietario del coche modelo Polo 1.2 Advance.
+                            <code>/actividades/actividad[fecha_inicio>="2018-01-01" and fecha_inicio<="2018-12-31"]/titulo/text()</code>
+                            <img src="images/15.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

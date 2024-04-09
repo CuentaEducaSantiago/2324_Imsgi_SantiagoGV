@@ -1,0 +1,12 @@
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT State (#PCDATA)>
+<!ELEMENT Zip (#PCDATA)>
+<!ELEMENT Address (City, State, Zip)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT ContactoNO (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT Employee (Address, Email, ContactoNO, LastName, FirstName)>
+<!ELEMENT Company (Employee)>
+<!ATTLIST Company xmlns:xsi CDATA #IMPLIED > <!-- para que este doblemente validado -->
+<!ATTLIST Company xsi:noNamespaceSchemaLocation CDATA #IMPLIED >

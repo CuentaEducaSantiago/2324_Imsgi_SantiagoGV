@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="css/estilos.css"?>
+<!DOCTYPE alumno SYSTEM "06.dtd">
+<Ejemlos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="03.xsd">
+    <CODIGOS>
+        <Lenguaje>HTML</Lenguaje>
+        <HTML>
+            <![CDATA[
+            <html lang="es">
+                <head>
+                    <meta charset="utf-8"> 
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta name="description" content="valor metadato">
+                    <meta name="author" content="Santiago González Vicente">
+                    <meta name="Keywords" content="Local, Nacional, Internacional">
+                    <meta name="Generator" content="Visual Studio Code">
+                    <link rel="shortcut icon" type="image/jpg" href="../../webroot/media/images/favicon/favicon.ico"> 
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <title>Ud2-01 Santiago González Vicente</title>
+                </head>
+                <body>
+                    <h1>Hola Mundo</h1>
+                </body>
+            </html>
+            ]]>
+        </HTML>
+        <Lenguaje>JAVA</Lenguaje>
+        <Java>
+            <![CDATA[
+            public class E01{
+                public static void main(String[] args) {
+                System.out.println("Mi primer programa");
+                }
+            } 
+            ]]>
+        </Java>
+        <Lenguaje>PHP</Lenguaje>
+        <PHP>
+            <![CDATA[
+            <!DOCTYPE html>
+            <html>
+                <body>
+                    <echo "Welcome Home!">
+                </body>
+            </html>
+            ]]>
+        </PHP>
+    </CODIGOS>
+</Ejemlos>

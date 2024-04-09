@@ -1,0 +1,9 @@
+*{
+    white-space: pre;
+}
+CODIGOS::after { 
+    color: red;
+    text-size-adjust: 20px;
+    border: 20px;
+}
+codigo::after { content: ' \A'; white-space: pre;}

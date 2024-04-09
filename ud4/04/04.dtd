@@ -1,0 +1,26 @@
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Apellidos (#PCDATA)>
+<!ELEMENT Anyo_de_nacimiento (#PCDATA)>
+<!ELEMENT Ciudad (#PCDATA)>
+<!ELEMENT Pais (#PCDATA)>
+<!ELEMENT Residencia (Ciudad, Pais)>
+<!ELEMENT Telefono (#PCDATA)>
+<!ELEMENT Correo_electronico (#PCDATA)>
+<!ELEMENT Perfil_Linkedln (#PCDATA)>
+<!ELEMENT Descripcion_general (#PCDATA)>
+<!ELEMENT Nombre_Listado (#PCDATA)>
+<!ELEMENT Nivel (#PCDATA)>
+<!ELEMENT Listado_de_competencias (Nombre_Listado, nivel)>
+<!ELEMENT Titulacion (#PCDATA)>
+<!ELEMENT centro_de_formacion (#PCDATA)>
+<!ELEMENT Anyo_de_titulacion (#PCDATA)>
+<!ELEMENT Formacion_academica (Titulacion, centro_de_formacion, Anyo_de_titulacion)>
+<!ELEMENT puesto (#PCDATA)>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT Anyo_de_inicio (#PCDATA)>
+<!ELEMENT Anyo_de_finalizacion (#PCDATA)>
+<!ELEMENT Experiencia_profesional (puesto, empresa, Anyo_de_inicio, Anyo_de_finalizacion)>
+<!ELEMENT Datos_de_contacto (Telefono, Correo_electronico, Perfil_Linkedln, Descripcion_general, Listado_de_competencias, Formacion_academica, Experiencia_profesional)>
+<!ELEMENT Curriculum (Nombre,Apellidos, Anyo_de_finalizacion, Residencia, Datos_de_contacto)>
+<!ATTLIST Curriculum xmlns:xsi CDATA #IMPLIED > <!-- para que este doblemente validado -->
+<!ATTLIST Curriculum xsi:noNamespaceSchemaLocation CDATA #IMPLIED >

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<![CDATA[contenido especial: \n áéíóúñ&]]>
+<channel>
+    <title>Santiago GV, Practicas</title>
+    <link>file:///D:/daw1/2324_Imsgi_SantiagoGV</link>
+    <description>Ultimas Practicas</description>
+    <lastBuildDate>TuES, 15 Jan 2024</lastBuildDate>
+    <skipDays>
+        <day>Monday</day>
+        <day>Tuesday</day>
+        <day>Wednesday</day>
+        <day>Thursday</day>
+        <day>Friday</day>
+        <day>Saturday</day>
+        <day>Sunday</day>
+    </skipDays>
+    <skipHours>
+        <hour>0</hour>
+        <hour>1</hour>
+        <hour>2</hour>
+        <hour>3</hour>
+        <hour>4</hour>
+        <hour>5</hour>
+        <hour>6</hour>
+        <hour>7</hour>
+        <hour>8</hour>
+    </skipHours>
+    <category>Pract_ud2</category>
+    <category>Exam</category>
+    <category>Pract_ud3</category>
+    <item>
+        <title category="Pract_ud2">Unidad 2 Practica 11</title>
+        <link>http://192.168.2.217/ud2/11/index.html</link>
+        <enclosure type="xml" url="http://192.168.2.217/2324_Imsgi_SantiagoGV/ud2/11/index.html"/>
+        <description>Completa y evaluada</description>
+    </item>
+    <item>
+        <title category="Exam">Examen</title>
+        <link>http://192.168.2.217/examen/01/index.html</link>
+        <enclosure type="xml" url="http://192.168.2.217/2324_Imsgi_SantiagoGV/examen/01/index.html"/>
+        <description>Completa y evaluada</description>
+    </item>
+    <item>
+        <title category="Pract_ud3">Unidad 3 Practica 1</title>
+        <link>http://192.168.2.217/ud3/01/01.xml</link>
+        <enclosure type="xml" url="http://192.168.2.217/2324_Imsgi_SantiagoGV/ud3/01/01.xml"/>
+        <description>Completa y sin evaluada</description>
+    </item>
+</channel>
+</rss>
