@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manual SYSTEM "03.dtd">
+<manual xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="03.xsd">
+    <raiz>MAN01</raiz>
+    <servicio>Servidor Apache, versión 2.4</servicio>
+    <descripcion>El servidor HTTP Apache de código abierto, para plataformas Unix, Microsoft Windows, Mancintosh y otras,</descripcion>
+    <version>implementa HTTP/1.1 Y sitios virtuales</version>
+    <requisitos_del_sistema>
+        <sistema_operativo>Linux</sistema_operativo>
+        <memoria_ram>2 GB</memoria_ram>
+        <espacio_en_disco>100 GB</espacio_en_disco>
+        <puertos_disponibles>Puertos 80 y 443</puertos_disponibles>
+    </requisitos_del_sistema>
+    <otros_datos>
+        <url>Página Oficial: <pagina>https://httpd.apache.org/</pagina></url>
+        <url>Wiki: <pagina>https://es.wikipedia.org/wiki/Servidor_HTTP_APACHE</pagina></url>
+    </otros_datos>
+    <pasos_de_instalacion>
+        Pasos a seguri para su instalación:
+        <paso> 
+            Paso 1:
+            <comando>sudo apt install apache2</comando>
+            <descripcion>Descargar e instalar el paquete apache2</descripcion>
+        </paso>
+        <paso>
+            Paso 2:
+            <comando>sudo service apache2 status</comando>
+            <descripcion>Comprobar el estado del servicio</descripcion>
+        </paso>
+        <paso>
+            Paso 3:
+            <comando>sudo ufw allow Apache</comando>
+            <descripcion>Abrir el cortafuegos el puerto 80 y 443</descripcion>
+        </paso>
+    </pasos_de_instalacion>
+</manual>

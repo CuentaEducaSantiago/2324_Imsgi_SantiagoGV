@@ -1,0 +1,46 @@
+*{padding: 0; margin: 0}
+html{
+    background-color: #666666;
+}
+body{
+    list-style: decimal;
+    font-style: sans-serif;
+    background-color: white;
+}
+header{
+    position: sticky, top, center;
+    text-align: center;
+    border-radius: 3px;
+    border-style: solid;
+}
+img{
+    height: 100px;
+    padding: 100px;
+}
+figure{
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+}
+.uno{
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #FF5733;
+}
+.dos{
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+}
+.titulo1{
+    color: #FF5733;
+}
+.titulo2{
+    color: #75FF33;
+}
+.titulo3{
+    color: #33DBFF;
+}
+.titulo4{
+    color: #BD33FF;
+}

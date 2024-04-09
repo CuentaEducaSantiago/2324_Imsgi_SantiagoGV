@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="manual">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="raiz">
+                    <xs:complexType>
+                        <xs:attribute name="codigo"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="servicio"/>
+                <xs:element name="descripcion"/>
+                <xs:element name="version"/>
+                <xs:element name="fecha_actualizacion"/>
+                <xs:element name="requisitos_del_sistema">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sistema_operativo"/>
+                            <xs:element name="memoria_ram"/>
+                            <xs:element name="espacio_en_el_disco"/>
+                            <xs:element name="puertos_disponibles"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="otros_datos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="url">
+                                <xs:complexType>
+                                    <xs:attribute name="pagina"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="pasos_de_instalacion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="paso">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="comando"/>
+                                        <xs:element name="descripcion"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
