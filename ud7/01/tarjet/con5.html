@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>consulta 5</title>
+    <link href="css/estilos.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <article>
+        <table>
+          <thead>
+            <tr>
+              <th>Titulo</th>
+              <th>categoría</th>
+            </tr>
+          </thead>
+          <tbody>
+          {for $x in doc("books.xml")//book
+            return <tr> 
+                          <td>{($x/title)}</td>
+                          <td>{($x/category)}</td>
+                   </tr>
+          }
+          </tbody>
+        </table>
+    </article>
+    <article>
+      <ul>
+        {
+          for $x in doc("books.xml")/bookstore/book
+          return 
+            <li class="{($x/category)}">{data($x/title)}</li>
+        }
+      </ul>
+    </article>
+  </body>
+</html>
