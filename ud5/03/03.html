@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--
+Autor: Santiago González Vicente
+Descripción:Ud2-01 Santiago González Vicente HTML 
+Fecha de creación: 26/09/2023
+-->
+<html lang="es">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="valor metadato">
+		<meta name="author" content="Santiago González Vicente">
+		<meta name="Keywords" content="Local, Nacional, Internacional">
+		<meta name="Generator" content="Visual Studio Code">
+		<link rel="shortcut icon" type="image/jpg" href="../../webroot/media/images/favicon/favicon.ico"> 
+        <link href="css/estilo.css"  rel="stylesheet"  type="text/css">
+		<title>Tema 5 XPath</title>
+	</head>
+    <body>
+        <h1>Tema 5 XPath</h1>
+        <h2>Ejercicio 3</h2>
+        <h3>Datos <a href="http://xpather.com/XbMPGA7i">xml</a></h3>
+        <main>
+            <section>
+                <div>
+                    <ol>
+                        <li>1. Nombre de la Universidad.
+                            <code>/universidad/nombre</code>
+                            <img src="images/01.png" alt="Resultado 1"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>2. Pais de la Universidad.
+                            <code>/universidad/pais</code>
+                            <img src="images/02.png" alt="Resultado 2"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>3. Nombres de las Carreras.
+                            <code>//carrera/nombre</code>
+                            <img src="images/03.png" alt="Resultado 3"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>4. Años de plan de estudio de las carreras. 
+                            <code>//carrera/plan</code>
+                            <img src="images/04.png" alt="Resultado 4"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>5. Nombres de todos los alumnos.
+                            <code>//alumno/nombre</code>
+                            <img src="images/05.png" alt="Resultado 5"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>6. Identificadores de todas las carreras.
+                            <code>//carrera/@id</code>
+                            <img src="images/06.png" alt="Resultado 6"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>7. Datos de la carrera cuyo id es c01.
+                            <code>//carrera[@id='c01']</code>
+                            <img src="images/07.png" alt="Resultado 7"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>8. Centro en que se estudia de la carrera cuyo id es c02.
+                            <code>//carrera[@id='c02']/centro</code>
+                            <img src="images/08.png" alt="Resultado 8"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>9. Nombre de las carreras que tengan subdirector.
+                            <code>//subdirector/../nombre</code>
+                            <img src="images/09.png" alt="Resultado 9"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>10. Nombre de los alumnos que estén haciendo proyecto.
+                            <code> //alumno//proyecto/../../nombre</code>
+                            <img src="images/10.png" alt="Resultado 10"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>11. Códigos de las carreras en las que hay algún alumno matriculado.
+                            <code>//alumno//carrera/@codigo</code>
+                            <img src="images/11.png" alt="Resultado 11"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>12. Apellidos y Nombre de los alumnos con beca.
+                            <code>//alumno[@beca]/nombre | //alumno[@beca]/apellido1 | //alumno[@beca]/apellido2</code>
+                            <img src="images/12.png" alt="Resultado 12"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>13. Nombre de las asignaturas de la titulación c04.
+                            <code>//asignatura[@titulacion='c04']/nombre</code>
+                            <img src="images/13.png" alt="Resultado 13"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>14. Nombre de las asignaturas de segundo trimestre.
+                            <code>//asignatura[trimestre=2]/nombre</code>
+                            <img src="images/14.png" alt="Resultado 14"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>15. Nombre de las asignaturas que no tienen 4 créditos teóricos.
+                            <code>//asignatura[not(creditos_teoricos=4)]/nombre</code>
+                            <img src="images/15.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>16. Código de la carrera que estudia el último alumno.
+                            <code>//alumno[last()]//carrera/@codigo</code>
+                            <img src="images/16.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>17. Código de las asignaturas que estudian mujeres.
+                            <code>//alumno[sexo='Mujer']//asignatura/@codigo</code>
+                            <img src="images/17.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>18. Nombre de los alumnos que matriculados en la asignatura a02.
+                            <code>//alumno[.//asignatura/@codigo='a02']/nombre</code>
+                            <img src="images/18.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>19. Códigos de las carreras que estudian los alumnos matriculados en alguna asignatura.
+                            <code>//alumno//asignatura/../../carrera/@codigo</code>
+                            <img src="images/19.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>20. Apellidos de todos los hombres.
+                            <code>//alumno[sexo='Hombre']/apellido1 | //alumno[sexo='Hombre']/apellido2</code>
+                            <img src="images/20.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>21. Nombre de la carrera que estudia Víctor Manuel.
+                            <code>//carrera[@id=//alumno[nombre='Víctor Manuel']//carrera/@codigo]/nombre</code>
+                            <img src="images/21.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>22. Nombre de las asignaturas que estudia Luisa.
+                            <code>//asignatura[@id=//alumno[nombre='Luisa']//asignatura/@codigo]/nombre</code>
+                            <img src="images/22.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>23. Primer apellido de los alumnos matriculados en Ingeniería del Software.
+                            <code>//alumno[.//asignatura/@codigo=//asignatura[nombre='Ingeniería del Software']/@id]/apellido1</code>
+                            <img src="images/23.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>24. Nombre de las carreras que estudian los alumnos matriculados en la asignatura Tecnología de los Alimentos.
+                            <code>//carrera[@id=//alumno[.//asignatura[@codigo=//asignatura[nombre='Tecnología de los Alimentos']/@id]]//carrera/@codigo]/nombre</code>
+                            <img src="images/24.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>25. Nombre de los alumnos matriculados en carreras que no tienen subdirector.
+                            <code>//alumno[not (.//carrera/@codigo=//carrera[subdirector]/@codigo)]/nombre</code>
+                            <img src="images/25.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>26. Nombre de los alumnos matriculados en asignaturas con 0 créditos prácticos y que estudien la carrera de I.T. Informática .
+                            <code>//alumno[.//asignatura/@codigo=//asignatura[creditos_practicos=0]/@id][.//carrera/@codigo=//carrera[nombre='I.T. Informática']/@id]/nombre</code>
+                            <img src="images/26.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ol>
+                        <li>27. Nombre de los alumnos que estudian carreras cuyos planes son anteriores a 2002.
+                            <code>//alumno[.//carrera/@codigo=//carrera[not(plan>=2002)]/@id]/nombr</code>
+                            <img src="images/27.png" alt="Resultado 15"/>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
