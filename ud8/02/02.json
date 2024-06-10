@@ -1,0 +1,34 @@
+{
+"Lenguajes":[{
+    "L1":{
+        "nombre":"HTML-Lenguaje de etiquetas de hipertexto",
+        "anyoCreacion":1993,
+        "autores":[{"nombre":"Tim Berners-Lee"}],
+        "compilado":"si"
+    },
+    "L2":{
+        "nombre":"javascript",
+        "anyoCreacion":1995,
+        "autores":[{"nombre":"Brendan Eich"}],
+        "compilado":"si"
+    },
+    "L3":{
+        "nombre":"java",
+        "anyoCreacion":1995,
+        "autores":[{
+            "nombre":"James Gosling",
+            "nombre":"Patrick Naughton",
+            "nombre":"Chris Warth",
+            "nombre":"Mike Sheridan",
+            "nombre":"Ed Frank"
+        }],
+        "compilado":"si"
+    },
+    "L4":{
+        "nombre":"Python",
+        "anyoCreacion":1993,
+        "autores":[{"nombre":"Guido van Rossum"}],
+        "compilado":"si"
+    }
+}]
+}

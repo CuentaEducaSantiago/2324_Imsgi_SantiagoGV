@@ -23,6 +23,7 @@ section {
     width: 30%;
     margin-right: 40px; 
     margin-bottom: 10px;
+    background-color: white;
     border-style: solid;
     border-color: #00686c;
 }
@@ -82,32 +83,39 @@ nav ul li a:hover {
 section a:hover {
     color: gray;
 }
-
 section ol {
-    padding: 10px;
+    padding: 10px 0px;
     margin-top: 7px;
     width: 100%;
     color: #edecb3;
 }
-section:nth-child(2) section{
+section:nth-child(3){
     background-image: url("/webroot/media/images/7365.jpg");
     background-repeat: no-repeat;
-    background-position:bottom;
+    background-position: bottom, right;
+    background-size: 400px;
+}
+section:nth-child(4){
+    background-image: url("/webroot/media/images/3929637.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom, right;
     background-size: 400px;
 }
 section li {
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
+    flex-direction:column;
+    margin: 5px;   
     background-color: #edecb3;
     color: #00686c;
     font-size: 30px;
     padding: 10px;
+    margin-bottom: 0;
+    list-style: none;
 }
 section a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items:center;
+    align-content:center;
+    justify-content:center;
     background-color: #00686c;
     color: #edecb3;
     height: 50px;
@@ -116,8 +124,8 @@ section a {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     text-decoration: none;
+    font-family: 'Blinker';
 }
-
 footer {
     display: flex;
     background-color: #00686c;

@@ -1,0 +1,93 @@
+{
+    "Nombre_Equipo":"",
+    "Color":"",
+    "Nombre_Estadio":"",
+    "Nombre_Entrenador":"",
+    "Plantilla_historica":"",
+    "Referencia":"",
+    "Jugadores":[{
+        "Base":[{
+            "Jugador":[{
+                "Nombre":"ALBERTO DÍAZ ORTIZ", 
+                "dorsal":[{
+                    "numero":4,
+                    "numero":19,
+                    "numero":25
+                }]
+            }],
+            "Jugador":[{
+                "Nombre":"KENDRICK PERRY", 
+                "dorsal":[{
+                    "numero":55
+                }]
+            }]
+        }],
+        "Alero":[{
+            "Jugador":[{
+                "Nombre":"JONATHAN BARREIRO RODRÍGUEZ", 
+                "dorsal":[{
+                    "numero":7
+                }]
+            }],
+            "Jugador":[{
+                "Nombre":"MELVIN EJIM", 
+                "dorsal":[{
+                    "numero":3
+                }]
+            }]
+        }],
+        "Pivote":[{
+            "Jugador":[{
+                "Nombre":"DYLAN OSETKOWSKI", 
+                "dorsal":[{
+                    "numero":1
+                }]
+            }],
+            "Jugador":[{
+                "Nombre":"AUGUSTO CÉSAR LIMA BRITO", 
+                "dorsal":[{
+                    "numero":7
+                }]
+            }],
+            "Jugador":[{
+                "Nombre":"WILLIAM BENSON THOMAS", 
+                "dorsal":[{
+                    "numero":15,
+                    "numero":34
+                }]
+            }],
+            "Jugador":[{
+                "Nombre":"DAVID KRAVISH", 
+                "dorsal":[{
+                    "numero":45
+                }]
+            }],
+            "Jugador":[{
+                "Nombre":"YANKUBA SIMA FATTY", 
+                "dorsal":[{
+                    "numero":77
+                }]
+            }]
+        }],
+        "Escolta":[{
+            "Jugador":[{
+                "Nombre":"TYLER KALINOSKI", 
+                "dorsal":[{
+                    "numero":4
+                }]
+            }],
+            "Jugador":[{
+                "Nombre":"KAMERON MILTON ALLANTE TAYLOR", 
+                "dorsal":[{
+                    "numero":6
+                }]
+            }],
+            "Jugador":[{
+                "Nombre":"TYSON CARTER", 
+                "dorsal":[{
+                    "numero":11
+                }]
+            }]
+        }]
+    }]
+}

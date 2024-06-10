@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Lenguajes de Programacion</title>
+    </head>
+    <body>
+        <header>
+            <h1>Lenguajes de Programacion:</h1>
+        </header>
+        <main>
+            <div><p id="L1"></p></div>
+            <div><p id="L2"></p></div>
+            <div><p id="L3"></p></div>
+            <div><p id="L4"></p></div>
+            <script>
+                let cadenaJson='[{"nombre":"HTML-Lenguaje de etiquetas de hipertexto","anyo_creacion":"1993","autores":[{"nombre":"Brendan Eich"}],"compilado":"si"}]'
+                let objetoJson=JSON.parse(cadenaJson);
+                document.getElementById("L1").innerHTML=objetoJson[0].nombre+""+objetoJson[0].anyocreacion+""+objetoJson[0].autores.nombre+""+objetoJson[0].compilado+"";
+                document.getElementById("L2").innerHTML=objetoJson[1].nombre+""+objetoJson[1].anyocreacion+""+objetoJson[1].autores.nombre+""+objetoJson[1].compilado+"";
+                document.getElementById("L3").innerHTML=objetoJson[2].nombre+""+objetoJson[2].anyocreacion+""+objetoJson[2].autores.nombre+""+objetoJson[2].compilado+"";
+                document.getElementById("L4").innerHTML=objetoJson[3].nombre+""+objetoJson[3].anyocreacion+""+objetoJson[3].autores.nombre+""+objetoJson[3].compilado+"";
+            </script>
+        </main>
+    </body>
+</html>
