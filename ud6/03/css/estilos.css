@@ -1,0 +1,20 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Blinker-Light, Arial, sans-serif;
+}
+html body header h1{
+    color: green;
+}
+html body h2{
+    background-color: green;
+    color: greenyellow;
+}
+html body div{
+    border-style: solid;
+    border-color: greenyellow;
+    color: green;
+}
+table caption{
+    color: greenyellow;
+}

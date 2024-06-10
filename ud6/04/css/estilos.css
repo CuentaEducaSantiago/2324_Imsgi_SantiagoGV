@@ -1,0 +1,19 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    width: 1024px;
+    margin: 0 auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th{
+    height: 1.2em;
+    
+}
+/**{
+    color: greenyellow;
+}**/

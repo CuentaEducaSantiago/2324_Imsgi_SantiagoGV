@@ -1,0 +1,13 @@
+:root {
+     /*color del fondo*/
+    --color1: #283370 ;
+   /*color del texto*/
+    --color2:#9da7db ;
+    --color3:  #5c6cc4;
+   
+}
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Blinker-Light, Arial, sans-serif;
+}
